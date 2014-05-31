@@ -24,6 +24,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    opacity: 1;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -67,7 +68,7 @@ Navigation
     width: 100%;
     height: 30vh;
     top: 75%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 0;
     margin: 0;
     z-index: 100;
@@ -102,7 +103,7 @@ Navigation
 .image {
     float: left;
     padding: 10px 0 0 40px;
-    opacity: 1;
+    opacity: 1 !important;
     width: 150px;
     height: 150px;
 }
@@ -124,7 +125,7 @@ Videos Page
 ===============================================
 */
 #vid {
-    background-image: url(../images/bgvid.png);
+    background-color: #000;
     position: absolute;
     background-size: contain;
     height: 100%;
@@ -159,6 +160,16 @@ Pictures Page
     background-size: contain;
     height: 120%;
     width: 100%;
+}
+.image-set {
+text-align: center;
+padding-top: 1.5%;
+}
+.content {
+max-width: 1200px;
+min-height: 970px;
+margin-left: auto;
+margin-right: auto;
 }
 /*
 ===============================================
