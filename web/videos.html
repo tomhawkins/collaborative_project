@@ -11,6 +11,9 @@
 	<title>The Pundit</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
+    
+    <!-- js
+  ================================================== -->
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -27,13 +30,61 @@
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="images/icon.jpg">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" href="images/icon.jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icon.jpg">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icon.jpg">
 
 </head>
 <body>
+    <div id="topbar">
+        <ul><li>vid1</li><li>vid2</li><li>vid3</li></ul>
+    </div>
         <div id="vid">
+           <div id="container"> 
+                <video controls width="100%" height="100%" poster="images/bg.jpg" preload="auto" onClick="this.play();">
+                    <source src="videos/example.mp4" type='video/mp4; codecs="H.264, AAC"'>
+                    <source src="videos/example.webm" type='video/mp4; codecs="vp8, vorbis"'>
+                        <div id="flashContent">
+                            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="vid1" align="middle">
+                                <param name="movie" value="videos/example.swf" />
+                                <!--flash file-->
+                                <param name="quality" value="high" />
+                                <param name="bgcolor" value="#ffffff" />
+                                <param name="play" value="true" />
+                                <param name="loop" value="false" />
+                                <param name="wmode" value="window" />
+                                <param name="scale" value="showall" />
+                                <param name="menu" value="true" />
+                                <param name="devicefont" value="false" />
+                                <param name="salign" value="" />
+                                <param name="allowScriptAccess" value="sameDomain" />
+                                <!--[if !IE]>-->
+                                <object type="application/x-shockwave-flash" data="videos/example.swf" width="540" height="264">
+                                    <param name="movie" value="treatment1.swf" />
+                                    <param name="quality" value="high" />
+                                    <param name="bgcolor" value="#ffffff" />
+                                    <param name="play" value="true" />
+                                    <param name="loop" value="false" />
+                                    <param name="wmode" value="window" />
+                                    <param name="scale" value="showall" />
+                                    <param name="menu" value="true" />
+                                    <param name="devicefont" value="false" />
+                                    <param name="salign" value="" />
+                                    <param name="allowScriptAccess" value="sameDomain" />
+                                <!--<![endif]-->
+                                    <a href="http://www.adobe.com/go/getflash">
+                                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                                    </a>
+                                <!--[if !IE]>-->
+                                </object>
+                                <!--<![endif]-->
+                            </object>
+                        </div>
+                            <p> Sorry your browser doesn't support the vide file.</p>
+                            <p> <a href="videos/example.mp4"> You can download the file here! </a></p>
+    			</video>
+            
+        
             
         </div>
     <nav id="navigation">
