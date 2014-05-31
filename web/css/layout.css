@@ -96,7 +96,6 @@ Navigation
 }
 #navigation ul li a:hover {
     color: #f00000;
-    border-bottom: 5px red;
     margin: 0;
     border: 0;
 }
