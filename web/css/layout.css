@@ -51,7 +51,13 @@ table {
 /* 
 ===============================================
 #Site Styles
-============================================
+===============================================
+*/
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*
+===============================================
 Navigation
 ===============================================
 */
@@ -90,6 +96,7 @@ Navigation
 }
 #navigation ul li a:hover {
     color: #f00000;
+    border-bottom: 5px red;
     margin: 0;
     border: 0;
 }
@@ -106,7 +113,7 @@ Home Page
 ===============================================
 */
 #home {
-    background-image: url(../images/bg.jpg);
+    background-color: #ccc;
     position: absolute;
     background-size: contain;
     height: 120%;
@@ -118,10 +125,10 @@ Videos Page
 ===============================================
 */
 #vid {
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/bgvid.png);
     position: absolute;
     background-size: contain;
-    height: 120%;
+    height: 100%;
     width: 100%;
 } 
 /*
