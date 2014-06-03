@@ -108,12 +108,14 @@ Navigation
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     margin: 20px;
+
 }
 
 .image:hover {
     width: 140px;
     height: 140px;
     margin: 25px;
+
 }
 
 .logo {
