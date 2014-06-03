@@ -11,7 +11,7 @@
 	<title>The Pundit</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -38,36 +38,36 @@
     <!--JQUERY for making the main section disappear when a character badge is hovered over, doesnt seem to be working atm; see git log for details-->
     
    <script>
-    $(document).ready(function(){
-    //if you're stuck on something go to api.jquery.com and search what you want to do, chances are you'll find something
-  
-  
-    //store the selecters in variables that way you've got them once then. it's more effcient
-    var char = $('.char1');
-    var main = $('#box');
-  
-    //you don't have to use on, you could just use .mouseenter() and .mouseleave()
-    char.on('mouseenter',function(){
-      main.css('border','1px solid red');
+$(document).ready(function(){
+  $(".char1").hover(function(){
+    $("#box").animate({
+    opacity:"0"
     });
-  
-  char.on('mouseleave',function(){
-     main.css('border','none');
+  });
+  $(".char1").hover(function(){
+    $("#box").animate({
+    opacity:"1", 
+    });
   });
 });
-       </script>
+</script>
+       
     
         <div id="characters">
             
-            <div class="char1">
-                text
+            <div id="wrapper">
+            
+            <div id="barry" class="char1">
+                char1
             </div>
             
-            <div id="charlotte">
+            <div id="charlotte" class="char1">
             </div>
+                
+                </div>
             
             <div id="box">
-                text
+                box
             </div>
             
         </div>
