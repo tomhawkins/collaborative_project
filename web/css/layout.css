@@ -193,35 +193,26 @@ Characters Page
     width: 100%;
 }
 
-#barry {
-    top: -300px;
-    background-color: #363636;
-    transition-duration: 0.3s;
-    
-}
-
-#barry:hover {
-    top: 0px;
-    transition-duration: 0.5s;
-}
-
 #charlotte {
     
 }
 
-#main {
-    width: 960px;
-    height: 400px;
-    background-color: #363636;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20%;
+#box {
+  width: 500px;
+  height: 150px;
+  background-color: #363636;
+  margin-left: auto;
+  margin-right: auto;
 }
+    
 
-.char {
-    height: 500px;
-    width: 200px;
-    position: fixed;
+.char1 {
+  height: 500px;
+  width: 200px;
+  position: fixed;
+  top: -300px;
+  background-color: #363636;
+    z-index: 1;
 }
 
 /*

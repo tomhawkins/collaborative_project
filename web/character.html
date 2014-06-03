@@ -11,7 +11,8 @@
 	<title>The Pundit</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,25 +38,36 @@
     <!--JQUERY for making the main section disappear when a character badge is hovered over-->
     
    <script>
-    $(document).ready(function () {
-    $(".char").hover(function () {
-        $("#main").css("border", "5px red solid");
+    $(document).ready(function(){
+    //if you're stuck on something go to api.jquery.com and search what you want to do, chances are you'll find something
+  
+  
+    //store the selecters in variables that way you've got them once then. it's more effcient
+    var char = $('.char1');
+    var main = $('#box');
+  
+    //you don't have to use on, you could just use .mouseenter() and .mouseleave()
+    char.on('mouseenter',function(){
+      main.css('border','1px solid red');
     });
-    $(".char").mouseleave(function () {
-        $("#main").css("border", "none");
-    });
+  
+  char.on('mouseleave',function(){
+     main.css('border','none');
+  });
 });
        </script>
     
         <div id="characters">
             
-            <div id="barry" class="char">
+            <div class="char1">
+                text
             </div>
             
             <div id="charlotte">
             </div>
             
-            <div id="main" class="main">
+            <div id="box">
+                text
             </div>
             
         </div>
