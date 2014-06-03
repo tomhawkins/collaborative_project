@@ -39,15 +39,15 @@
     
    <script>
 $(document).ready(function(){
-  $(".char1").hover(function(){
+  $(".char1").mouseenter(function(){
     $("#box").animate({
     opacity:"0"
-    });
+    },200);
   });
-  $(".char1").hover(function(){
+  $(".char1").mouseleave(function(){
     $("#box").animate({
     opacity:"1", 
-    });
+    },200);
   });
 });
 </script>
@@ -58,17 +58,21 @@ $(document).ready(function(){
             <div id="wrapper">
             
             <div id="barry" class="char1">
-                char1
+                <h1>BARRY "BAZ" STEAD</h1>
+                <p>The Bazstead, the pundit, the main perpetrator</p>
+                <img src="images/thumbs/barry_badge.png" id="barrybadge">
             </div>
             
             <div id="charlotte" class="char1">
+                <img src="images/thumbs/char_badge.png" id="charlottebadge">
+            </div>
+                
+                <div id="box">
+                <h6>Something rather hilarious, or maybe even useful could go in this box.</h6>
             </div>
                 
                 </div>
             
-            <div id="box">
-                box
-            </div>
             
         </div>
     <nav id="navigation">

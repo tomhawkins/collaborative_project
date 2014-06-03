@@ -68,12 +68,12 @@ Navigation
     width: 100%;
     height: 17vh;
     top: 83%;
-    background-color: rgba(255, 255, 255, 0.6);
     padding: 0;
     margin: 0;
     z-index: 100;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 #navigation ul {
     margin: 0;
@@ -101,7 +101,7 @@ Navigation
     border: 0;
 }
 .image {
-    float: left;
+    /*float: left;*/
     opacity: 1 !important;
     width: 150px;
     height: 150px;
@@ -173,7 +173,7 @@ Audio Page
     background-image: url(../images/backgrounds/audio.jpg);
     position: absolute;
     background-size: cover;
-    height: 120%;
+    height: 100%;
     width: 100%;
 } 
 /*
@@ -185,7 +185,7 @@ Pictures Page
     background-image: url(../images/backgrounds/pics.jpg);
     position: absolute;
     background-size: cover;
-    height: 120%;
+    height: 100%;
     width: 100%;
 }
 .image-set {
@@ -194,7 +194,7 @@ padding-top: 1.5%;
 }
 .content {
 max-width: 650px;
-min-height: 970px;
+min-height: 100%;
 margin-left: auto;
 margin-right: auto;
 }
@@ -207,12 +207,12 @@ Characters Page
     background-image: url(../images/backgrounds/characters.jpg);
     position: absolute;
     background-size: cover;
-    height: 120%;
+    height: 100%;
     width: 100%;
 }
 
 #wrapper {
-    width: 500px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -222,7 +222,17 @@ Characters Page
     margin-left: 20px;
     float: right;
     position: relative;
-    background-color: red;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+img#charlottebadge {
+    display: block;
+    margin-top: 118%;
+    position: absolute;
+    bottom: 35px;
+    left: 160px;
 }
 
 #charlotte:hover {
@@ -233,6 +243,17 @@ Characters Page
 #barry {
     transition-duration: 0.2s;
     margin-left: auto;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+img#barrybadge {
+    display: block;
+    margin-top: 118%;
+    position: absolute;
+    bottom: 35px;
+    left: 160px;
 }
 
 #barry:hover {
@@ -241,22 +262,32 @@ Characters Page
 }
 
 #box {
-  width: 650px;
+  width: 800px;
   height: 300px;
-  background-color: #363636;
-  position: relative;
-  margin-top: 30%;
+  position: absolute;
+  margin-top: 35vh;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
 }
-    
+ 
+h6 {
+ font-size:8vh;
+  text-align:center;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+h1 {
+    font-size: 40px;
+}
 
 .char1 {
-  height: 500px;
-  width: 200px;
+  height: 600px;
+  width: 400px;
   position: fixed;
-  top: -300px;
-  background-color: #363636;
+  top: -450px;
+  padding: 10px;
 }
 
 /*
